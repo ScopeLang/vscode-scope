@@ -1,0 +1,79 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Scope",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#boolean"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.scope",
+					"match": "\\b(func|import)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.built-in.scope",
+					"match": "\\b(void|int|string)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.scope",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.scope",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"include": "#comment-line"
+				},
+				{
+					"include": "#comment-block"
+				},
+				{
+					"include": "#comment-doc"
+				}
+			]
+		},
+		"comment-block": {
+			"name": "comment.block.scope",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		"comment-line": {
+			"name": "comment.single.line.scope",
+			"begin": "//",
+			"end": "$"
+		},
+		"comment-doc": {
+			"name": "comment.block.documentation.scope",
+			"begin": "/\\%",
+			"end": "\\%/"
+		}
+	},
+	"scopeName": "source.scope"
+}
