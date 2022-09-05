@@ -4,7 +4,7 @@
 			"import"
 		],
 		"body": [
-			"import \"${1:Standard/}\";"
+			"import \"${1:stdlib:}\";"
 		],
 		"description": "An import statement."
 	}

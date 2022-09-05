@@ -1,6 +1,6 @@
-# Scope VSCode Extension
+# [Scope](https://github.com/ScopeLang/Scope) VSCode Extension
 
-This is the source for the VSCode extension for Scope. 
+This is the source for the VSCode extension for [Scope](https://github.com/ScopeLang/Scope). 
 If you would like to use this extension, please follow the build instructions below.
 
 # Building
