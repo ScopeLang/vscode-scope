@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.scope",
-					"match": "\\b(func|import)\\b"
+					"match": "\\b(func|import|ret)\\b"
 				}
 			]
 		},
