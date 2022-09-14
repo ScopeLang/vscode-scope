@@ -16,7 +16,8 @@
 		"package": "npm run build && vsce package"
 	},
 	"activationEvents": [
-		"onLanguage:scope"
+		"onLanguage:scope",
+		"workspaceContains:**/scope.xml"
 	],
 	"main": "out/extension.js",
 	"contributes": {
