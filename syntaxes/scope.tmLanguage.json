@@ -12,6 +12,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#numbers"
+		},
+		{
 			"include": "#boolean"
 		},
 		{
@@ -43,6 +46,14 @@
 				{
 					"name": "constant.character.escape.scope",
 					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.scope",
+					"match": "-?\\b[0-9]+l?\\b"
 				}
 			]
 		},
