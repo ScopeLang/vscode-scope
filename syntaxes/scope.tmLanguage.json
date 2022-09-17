@@ -34,7 +34,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.built-in.scope",
-					"match": "\\b(void|int|string)\\b"
+					"match": "\\b(void|int|string|bool)\\b"
 				}
 			]
 		},
@@ -54,6 +54,14 @@
 				{
 					"name": "constant.numeric.scope",
 					"match": "-?\\b[0-9]+l?\\b"
+				}
+			]
+		},
+		"boolean": {
+			"patterns": [
+				{
+					"name": "constant.language.boolean.scope",
+					"match": "\\b(true|false)\\b"
 				}
 			]
 		},
