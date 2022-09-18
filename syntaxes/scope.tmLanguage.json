@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.scope",
-					"match": "\\b(func|import|ret|breakpoint)\\b"
+					"match": "\\b(func|import|ret|breakpoint|if|else|while|for)\\b"
 				}
 			]
 		},
