@@ -34,7 +34,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.built-in.scope",
-					"match": "\\b(void|int|string|bool)\\b"
+					"match": "\\b(void|int|str|bool)\\b"
 				}
 			]
 		},
