@@ -34,7 +34,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.built-in.scope",
-					"match": "\\b(void|int|str|bool)\\b"
+					"match": "\\b(void|int|str|bool|dec)\\b"
 				}
 			]
 		},
@@ -53,7 +53,11 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.scope",
-					"match": "-?\\b[0-9]+l?\\b"
+					"match": "-?\\b\\d+\\b"
+				},
+				{
+					"name": "constant.numeric.scope",
+					"match": "-?\\b\\d*\\.\\d+\\b"
 				}
 			]
 		},
