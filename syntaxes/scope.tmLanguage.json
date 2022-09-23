@@ -18,6 +18,9 @@
 			"include": "#boolean"
 		},
 		{
+			"include": "#asmVar"
+		},
+		{
 			"include": "#comments"
 		}
 	],
@@ -26,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.scope",
-					"match": "\\b(func|import|ret|breakpoint|if|else|while|for)\\b"
+					"match": "\\b(func|import|ret|breakpoint|if|else|while|for|assembly)\\b"
 				}
 			]
 		},
@@ -66,6 +69,14 @@
 				{
 					"name": "constant.language.boolean.scope",
 					"match": "\\b(true|false)\\b"
+				}
+			]
+		},
+		"asmVar": {
+			"patterns": [
+				{
+					"name": "variable.name.scope",
+					"match": "\\$[^\\s]+\\$"
 				}
 			]
 		},
