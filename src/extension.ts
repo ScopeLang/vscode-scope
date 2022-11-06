@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import { posix } from 'path';
+import { posix } from "path";
 
 export async function activate(context: vscode.ExtensionContext) {
 	context.workspaceState.update("scopeXml", null);

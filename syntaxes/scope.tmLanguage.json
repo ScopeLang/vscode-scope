@@ -56,11 +56,11 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.scope",
-					"match": "-?\\b\\d+\\b"
+					"match": "-?\\b[0-9']\\.\\d+\\b"
 				},
 				{
 					"name": "constant.numeric.scope",
-					"match": "-?\\b\\d*\\.\\d+\\b"
+					"match": "-?\\b[0-9']+\\b"
 				}
 			]
 		},
