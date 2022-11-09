@@ -61,6 +61,14 @@
 				{
 					"name": "constant.numeric.scope",
 					"match": "-?\\b[0-9']+\\b"
+				},
+				{
+					"name": "constant.numeric.scope",
+					"match": "-?\\binfinity\\b"
+				},
+				{
+					"name": "constant.numeric.scope",
+					"match": "\\bnan\\b"
 				}
 			]
 		},
