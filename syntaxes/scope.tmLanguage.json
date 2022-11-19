@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.scope",
-					"match": "\\b(func|import|ret|breakpoint|if|else|while|for|assembly|step|namespace|using|break|continue)\\b"
+					"match": "\\b(func|import|ret|breakpoint|if|else|while|for|assembly|step|namespace|using|break|continue|is)\\b"
 				}
 			]
 		},
